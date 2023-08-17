@@ -30,7 +30,7 @@ module.exports = {
     });
 
     if (!requireDB) return;
-    if (requireDB.AntiLink == false) return;
+    if (!requireDB.AntiLink == false) return;
 
     const ragex =
       /(?:(?:https?|ftp|file):\/\/|www\.|ftp\.)(?:\([-A-Z0-9+&@#\/%=~_|$?!:,.]*\)|[-A-Z0-9+&@#\/%=~_|$?!:,.])*(?:\([-A-Z0-9+&@#\/%=~_|$?!:,.]*\)|[A-Z0-9+&@#\/%=~_|$])/gim;
