@@ -65,7 +65,7 @@ module.exports = {
       // Remove the message count for users who haven't sent any messages in a while
       setTimeout(() => {
         messageCounts.delete(message.author.id);
-      }, intervalSeconds * 1000);
+      }, 5000);
 
       if (!UserData) {
         const newData = new UserAM({
